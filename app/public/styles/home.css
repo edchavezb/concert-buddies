@@ -1,0 +1,18 @@
+body{
+    background-image: url("../images/concert.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: #3b3b3b;
+    opacity:0.9;
+    color: #ffffff;
+}
+
+.description{
+    display: inline;
+}
+
+.start{
+    float: right;
+}
