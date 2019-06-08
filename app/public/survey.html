@@ -24,67 +24,123 @@
 
   <div class="container">
 
-    <h2>Survey Questions</h2>
+    <div class="row">
+
+      <h2>Survey Questions</h2>
+      <hr>
+
+      <h3><strong>About You</strong></h3>
+
+    </div>
+
+    <br>
+
+    <div class="row mt-3">
+
+      <div class="col-12 col-md-6">
+        <div class="row ml-md-3">
+          <div class="form-group col-12">
+            <label for="name">Name (Required)</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+        </div>
+        <div class="row ml-md-3">
+          <div class="form-group col-6">
+            <label for="city">City (Required)</label>
+            <input type="text" class="form-control" id="city" required>
+          </div>
+
+          <div class="form-group col-6">
+            <label for="photo">Link to Photo Image (Required)</label>
+            <input type="text" class="form-control" id="photo" required>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-1"></div>
+
+      <div class="col-12 col-md-5">
+        <div class="row">
+  
+          <div class="form-group name-label px-2">
+            <label for="artist">Add 10 of your favorite artists (Not fully functional yet)</label>
+            <input type="text" id="artist" class="form-control">
+          </div>
+
+        </div>
+
+        <div class="row mt-1">
+         <button class="btn btn-secondary btn-block" id="add-artist">Add</button>
+        </div>
+
+        <div class="row mt-3">
+          <ul class="my-artists">
+          </ul>
+        </div>
+
+      </div>    
+
+    </div>
+
     <hr>
 
-    <h3><strong>About You</strong></h3>
-    <h4>Name (Required)</h4>
-    <input type="text" id="name" class="form-control" required>
+    <h4><strong>Please answer these questions about your concert preferences (choose the option that most often would describe your behavior)</strong></h4>
 
-    <h4>City (Required)</h4>
-    <input type="text" id="city" class="form-control" required>
-
-    <h4>Link to Photo Image (Required)</h4>
-    <input type="text" id="photo" class="form-control" required>
-
-    <hr>
+    <br>
 
     <h3><strong>Question 1</strong></h3>
-    <h4>Choose a song from the 80's</h4>
+    <h4>If the artist plays my favorite song:</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
-      <option value="1">Baby Jane - Rod Stewart</option>
-      <option value="2">Billie Jean - Michael Jackson</option>
-      <option value="3">Sweet Dreams (Are Made of This) - Eurythmics</option>
-      <option value="4">Never Gonna Give You Up - Rick Astley</option>
-      <option value="5">Separate Ways (Worlds Apart) - Journey</option>
+      <option value="1">I stay quiet and listen to it</option>
+      <option value="2">I sing along at a normal volume</option>
+      <option value="3">I scream in excitement</option>
+      <option value="4">I sing at the top of my lungs</option>
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>Choose a classic rock band</h4>
+    <h4>My favorite spot at a concert is:</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
-      <option value="1">The Beatles</option>
-      <option value="2">Led Zeppelin</option>
-      <option value="3">The Doors</option>
-      <option value="4">Queen</option>
-      <option value="5">The Rolling Stones</option>
+      <option value="1">In the front row, what's the point of going if you can't catch the sweat of the artist?</option>
+      <option value="2">In the middle rows right in the center, you get the best view without being squashed</option>
+      <option value="3">I try to get closer from the sides, that way you avoid feeling trapped</option>
+      <option value="4">I don't mind being far from the stage, I just want to listen to the music</option>
     </select>
-
 
     <h3><strong>Question 3</strong></h3>
-    <h4>If you could resurrect one recently dead musician, who would it be?</h4>
+    <h4>If there is a moshpit:</h4>
     <select class="chosen-select" id="q3">
       <option value=""></option>
-      <option value="1">Prince</option>
-      <option value="2">Chris Cornell</option>
-      <option value="3">David Bowie</option>
-      <option value="4">Juan Gabriel</option>
-      <option value="5">Leonard Cohen</option>
+      <option value="1">I watch and make sure nobody gets hurt</option>
+      <option value="2">I throw punches and show no mercy</option>
+      <option value="3">I move to a different part of the crowd</option>
+      <option value="4">I take part but I just dance around</option>
+      <option value="5">I would never go to that type of concert</option>
     </select>
-
 
     <h3><strong>Question 4</strong></h3>
-    <h4>Select you favorite TV-show theme</h4>
+    <h4>I would describe my use of gadgets during concerts as:</h4>
     <select class="chosen-select" id="q4">
       <option value=""></option>
-      <option value="1">Boss of Me - They Might be Giants (Malcolm in the Middle)</option>
-      <option value="2">Superman - Lazlo Bane (Scrubs)</option>
-      <option value="3">Woke Up This Morning - Alabama 3 (The Sopranos)</option>
-      <option value="4">The Fresh Prince of Bel Air - DJ Jazzy and the Fresh Prince (The Fresh Prince of Bel Air)</option>
-      <option value="5">I'll Be There For You - The Rembrandts (Friends)</option>
+      <option value="1">I take videos of all my favorite songs</option>
+      <option value="2">I don't take my phone out throughout the whole concert</option>
+      <option value="3">I take a couple of pictures and record short videos for social media</option>
+      <option value="4">I take a lot of pictures to remember the experience</option>
     </select>
 
+    <h3><strong>Question 5</strong></h3>
+    <h4>When it comes to dancing in concerts:</h4>
+    <select class="chosen-select" id="q5">
+      <option value=""></option>
+      <option value="1">I can't stand still, I jump and dance around from beginning to end</option>
+      <option value="2">I only dance if the song has great rhythm</option>
+      <option value="3">I get away from people who dance because they disrupt the experience</option>
+      <option value="4">I just stomp my foot and nod my head, no dancing thanks</option>
+    </select>
+
+    <br>
+    <br>
     <br>
     <br>
 
@@ -98,7 +154,6 @@
         <p><a href="/api/users">API User Data</a> | <a href="https://github.com/edgar821/concert-buddies">GitHub Repo</a></p>
       </div>
     </footer>
-
   </div>
 
   <!-- Modal -->
@@ -113,7 +168,9 @@
         </div>
         <div class="modal-body">
           <h2 id="match-name"></h2>
-          <img id="match-img" src="" alt="">
+          <img style="width: 100%" id="match-img" src="" alt="">
+          <br>
+          <h4 id="percentage"></h4>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -124,6 +181,9 @@
   </div>
 
   <script type="text/javascript">
+
+    var myArtists = [];
+
     // Chosen CSS
     var config = {
       ".chosen-select": {},
@@ -144,6 +204,12 @@
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
+
+    $("#add-artist").on("click", function(event) {
+      var artistAdd = $("#artist").val().trim();
+      myArtists.push(artistAdd);
+      console.log(myArtists);
+    });
 
     // Capture the form inputs
     $("#submit").on("click", function(event) {
@@ -179,7 +245,9 @@
             $("#q2").val(),
             $("#q3").val(),
             $("#q4").val(),
-          ]
+            $("#q5").val(),
+          ],
+          artists: myArtists
         };
 
         console.log(user);
@@ -187,9 +255,12 @@
         // AJAX post the data to the friends API.
         $.post("/api/users", user, function(data) {
 
+          var percentage = data[0] * 20 + "%";
+
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-          $("#match-name").text(data[0].name);
-          $("#match-img").attr("src", data[0].photo);
+          $("#match-name").text(data[1].name);
+          $("#match-img").attr("src", data[1].photo);
+          $("#percentage").text("You matched on " + percentage + " of your concert preferences!");
 
           // Show the modal with the best match
           $("#results-modal").modal("toggle");

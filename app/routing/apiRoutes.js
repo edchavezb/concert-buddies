@@ -23,7 +23,7 @@ module.exports = function(app) {
     }
     var biggestMatch = Math.max.apply(null, comparisonArray);
     console.log(comparisonArray, biggestMatch);
-    var matchesArray = [];
+    var matchesArray = [biggestMatch];
     for (var m = 0; m < comparisonArray.length; m++){
       if(comparisonArray[m] === biggestMatch){
         console.log(true);
